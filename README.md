@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Em Português
 
 Esse mês de março teve início a nova unidade currícular de Desenvolvimento WEB na Fábrica de Software, cada aluno escolheu um projeto para fazer, eu gosto muito de ler e por isso decidi fazer um livraria online. 
@@ -13,4 +12,3 @@ This month (March/2022) we started the new module of Web Development at Fábrica
 - Create an account;
 - Borrow and Return books;
 - See which books are for free and which ones are paid.
-=======
