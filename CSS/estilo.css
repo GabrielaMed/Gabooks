@@ -51,10 +51,10 @@
 }
 
 #table_produtos{  
-    background-color:rgba(22, 255, 205, 0.486);
     border-collapse: collapse;
-    margin-left: auto;
+    margin-left: 250px;
     margin-right: auto;
+    display: inline-block;
 }
 
 h1, h2, th{
