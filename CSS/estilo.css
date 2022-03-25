@@ -1,19 +1,28 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'CustomFont', Arima Madurai;
 }
 :root{
-    --cor-fundo:rgba(107, 107, 107, 0.082);
+    --cor-fundo:rgba(107, 107, 107, 0.090);
     --cor-hover:rgb(7, 199, 183);
     --cor-texto:rgb(53, 110, 103);
     --cor-titulo:rgb(53, 110, 103);
 }
 #principal{
-    background-color: var(--cor-fundo);
+    background-color: rgba(107, 107, 107, 0.150);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    
+}
+#img2{
+    width: 5%;
+    margin-right: 24px;
+}
+#title{
+    font-family: 'CustomFont', Arima Madurai;
+    text-align: center;
+    line-height: 20pt;
 }
 #menu{
     display: flex;
@@ -46,18 +55,22 @@
 
 #menu ul li a:hover{
     background-color: var(--cor-hover);
-    border-radius: 10px;
-
+    border-radius: 5px;
 }
 
-#table_produtos{  
+#div_produtos{  
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+}
+
+#table_produtos{
     border-collapse: collapse;
-    margin-left: 250px;
-    margin-right: auto;
-    display: inline-block;
+    margin-top: 80px;
+    margin-bottom:  80px;
 }
 
-h1, h2, th{
+h1, h2{
     text-align: center;
     font-size: 25px;
     color: var(--cor-titulo);
@@ -66,7 +79,7 @@ h1, h2, th{
 
 th{
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     padding: 5px;
     border: 1px solid;
@@ -74,7 +87,7 @@ th{
 
 td{
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     color: black;
     padding: 5px;
     border: 1px solid;
@@ -84,3 +97,16 @@ td{
     background-color: white;
     border: none;
 }
+
+.row {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom:  80px;
+}
+
+.column{
+    text-align: center;
+}
+
