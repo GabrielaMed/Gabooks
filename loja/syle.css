@@ -1,0 +1,25 @@
+#div_produtos{  
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+}
+
+#table_produtos{
+    width: 350px;
+    height: 380px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #D9E3FF;
+    color: black;
+    text-align: center;
+}
+
+th{
+    font-size: 16px;
+}
+
+td{
+    font-size: 14px;
+}

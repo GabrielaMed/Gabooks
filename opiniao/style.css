@@ -1,61 +1,53 @@
 :root{
     --main-color: #8968d7;
-    --link-color: #666;
     --highlight-text: #111;
-    --input-text: #111;
     --white-color: white;
     --point-list: #ccc;
     --line-input: #a88fe1;
     --texto1: #ccc;
 }
 
-.tela-login{
+.tela-op{
     height: 100%;
     background-color: var(--cor-de-fundo);
 }
 
-.tela-login ul li{
+.tela-op ul li{
     margin: 0px;
     list-style-type: none;
 }
 
-.tela-login input, button{
+.tela-op input, button{
     outline: none !important;
     border: none;
 }
 
-.tela-login button:hover{
+.tela-op .send-btn:hover{
     cursor: pointer;
 }
 
-.tela-login .texto1{
-    font-size: 15px;
-    color: var(--texto1);
-    line-height: 1.5px;
-}
-
-.tela-login .margin-bottom-35{
+.tela-op .margin-bottom-35{
     margin-bottom: 35px;
 }
 
-.tela-login .margin-top-35{
-    margin-top: 35px;
+.tela-op .margin-top-35{
+    margin-top: 80px;
 }
 
-.tela-login .margin-bottom-8{
+.tela-op .margin-bottom-8{
     margin-bottom: 8px;
 }
 
-.tela-login .margin-top-8{
+.tela-op .margin-top-8{
     margin-top: 8px;
 }
 
-.tela-login .container{
+.tela-op .container{
     width: 100%;
     margin: 0px;
 }
 
-.tela-login .container-login{
+.tela-op .container-op{
     width: 100%;
     min-width: 100vh;
     display: flex;
@@ -66,34 +58,25 @@
     background: var(--white-color);
 }
 
-.tela-login .wrap-login{
-    width: 370px;
+.tela-op .wrap-op{
+    width: 400px;
     height: 100%;
     margin-right: 50px;
     padding: auto;
     background-color: var(--white-color);
 }
 
-.tela-login .login-form{
+.tela-op .op-form{
     width: 100%;
 }
 
-.tela-login .login-form-title{
-    display: block;
-    padding-top: 100px;
-    font-size: 39px;
-    color: var(--highlight-text);
-    line-height: 1.5px;
-    text-align: center;
-}
-
-.tela-login .wrap-input{
+.tela-op .wrap-input{
     width: 100%;
     position: relative;
     border-bottom: 2px solid var(--line-input);
 }
 
-.tela-login .input-form{
+.tela-op .input-form{
     font-size: 18px;
     color: var(--input-text);
     line-height: 1.2px;
@@ -104,7 +87,7 @@
     padding: 0 5px;
 }
 
-.tela-login .focus-input-form{
+.tela-op .focus-input-form{
     position: absolute;
     display: block;
     width: 100%;
@@ -114,7 +97,7 @@
     pointer-events: none;
 }
 
-.tela-login .focus-input-form::before{
+.tela-op .focus-input-form::before{
     content: "";
     display: block;
     position: absolute;
@@ -126,7 +109,7 @@
     background-color: var(--main-color);
 }
 
-.tela-login .focus-input-form::after{
+.tela-op .focus-input-form::after{
     font-size: 18px;
     color: var(--texto1);
     line-height: 1.2px;
@@ -140,22 +123,22 @@
     transition: all 0.4s;
 }
 
-.tela-login .input-form:focus + .focus-input-form::after{
+.tela-op .input-form:focus + .focus-input-form::after{
     top: -20px;
     font-size: 14px;
 }
 
-.tela-login .input-form:focus + .focus-input-form::before{
+.tela-op .input-form:focus + .focus-input-form::before{
     width: 100%;
 }
 
-.tela-login .container-login-form-btn{
+.tela-op .container-send-btn{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.tela-login .login-form-btn{
+.tela-op .send-btn{
     font-size: 16px;
     color: #111;
     line-height: 1.2px;
@@ -169,4 +152,28 @@
     background-color: #c199e9;
     border-radius: 5px;
     transition: all 0.4s;
+}
+
+.tela-op .type-opinion{
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+    outline: none !important;
+    border-color: var(--line-input);
+}
+
+.tela-op .type-opinion:focus{
+    border-color: var(--main-color);
+}
+
+.tela-op .suaOp{
+    padding-bottom: 40px;
+}
+
+.tela-op .opiniao{
+    font-size: 18px;
+    color: var(--highlight-text);
+    display: block;
+    padding: 0 5px;
 }

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="../CSS/estilo.css">
         <link rel="icon" sizes="48x48" href="../img/logo.svg">
         <script src="enviar.js"></script>
     <title>Gabooks</title>
 </head>
-<body>
+<body class="tela-op">
     <nav id="menu">
         <h1 id="title">Biblioteca Gabooks</h1>
         <ul>
@@ -21,21 +22,25 @@
         </ul>
         <img src="../img/reading.gif" alt="My Little Poney" id="img2">
     </nav>
-    <form name="form">
-        <h1 id="opiniao_titulo">Entre em Contato</h1>
-        <h2>
-            <label for="nome">Nome</label>
-            <input type="text" id="nomeId" required="required" name="nome">
-        </h2>
-        <h2>
-            <label for="email">E-mail</label>
-            <input type="email" id="emailId" placeholder="seuemail@gmail.com" name="email">
-        </h2>
-        <h2>
-            <label for="opiniao">Deixe sua opinião:</label>
-            <textarea></textarea>
-        </h2>
-    <input type="submit" class="enviar" onclick="Enviar();" value="Enviar">
-    </form>
+    <div class="container">
+        <div class="container-op">
+            <div class="wrap-op">
+                <form>
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text"  id="nomeId" required="required" name="nome">
+                        <span class="focus-input-form" data-placeholder="Nome"></span>
+                    </div>
+                    <div class="wrap-input margin-bottom-35">
+                        <input class="input-form" type="email" name="email" autocomplete="off">
+                        <span class="focus-input-form" data-placeholder="E-mail"></span>
+                    </div>
+                    <div class="suaOp">
+                        <label for="opiniao" class="opiniao">Deixe sua opinião:</label>
+                        <textarea class="type-opinion"></textarea>
+                    </div>
+                    <div class="container-send-btn">
+                    <input type="submit" class="send-btn" onclick="Enviar();" value="Enviar">
+                    </div>
+                </form>
 </body>
 </html>

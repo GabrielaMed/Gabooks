@@ -1,9 +1,4 @@
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
-  }
+
 *{
     margin: 0;
     padding: 0;
@@ -13,8 +8,8 @@
 :root{
     --cor-fundo:#D9E3FF;
     --cor-hover:rgb(7, 199, 183);
-    --cor-texto:rgb(53, 110, 103);
-    --cor-titulo:rgb(53, 110, 103);
+    --cor-texto:#111;
+    --cor-titulo:#111;
 }
 #principal{
     background-color: #CFDAF5;
@@ -108,10 +103,4 @@ td{
 
 .column{
     text-align: center;
-}
-
-@media only screen and (max-width:779px){
-    #table_produtos{
-        width: 100%;
-    }
 }
