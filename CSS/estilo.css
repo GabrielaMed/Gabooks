@@ -1,16 +1,23 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
 *{
     margin: 0;
     padding: 0;
-    font-family: 'CustomFont', Arima Madurai;
+    font-family: 'Raleway', sans-serif;
 }
+
 :root{
-    --cor-fundo:rgba(107, 107, 107, 0.090);
+    --cor-fundo:#D9E3FF;
     --cor-hover:rgb(7, 199, 183);
     --cor-texto:rgb(53, 110, 103);
     --cor-titulo:rgb(53, 110, 103);
 }
 #principal{
-    background-color: rgba(107, 107, 107, 0.150);
+    background-color: #CFDAF5;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -20,12 +27,12 @@
     margin-right: 24px;
 }
 #title{
-    font-family: 'CustomFont', Arima Madurai;
     text-align: center;
     line-height: 20pt;
 }
 #menu{
     display: flex;
+    width: 100%;
     flex-direction: row;
     align-items: center;
     background-color: var(--cor-fundo);
@@ -65,9 +72,15 @@
 }
 
 #table_produtos{
-    border-collapse: collapse;
+    width: 350px;
+    height: 380px;
     margin-top: 80px;
-    margin-bottom:  80px;
+    margin-bottom: 80px;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #D9E3FF;
+    color: black;
+    text-align: center;
 }
 
 h1, h2{
@@ -78,24 +91,11 @@ h1, h2{
 }
 
 th{
-    text-align: center;
     font-size: 16px;
-    color: black;
-    padding: 5px;
-    border: 1px solid;
 }
 
 td{
-    text-align: center;
     font-size: 14px;
-    color: black;
-    padding: 5px;
-    border: 1px solid;
-}
-
-#th1{
-    background-color: white;
-    border: none;
 }
 
 .row {
@@ -110,3 +110,8 @@ td{
     text-align: center;
 }
 
+@media only screen and (max-width:779px){
+    #table_produtos{
+        width: 100%;
+    }
+}
